@@ -1,0 +1,41 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+{% block title %}
+
+Forgot Password
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="form">
+            <form id="form-login">
+                <h1>Reset Your Password</h1>
+                <div class="login">
+                    <div class="user">
+                        <label>Username</label><br>
+                    </div>
+                    <div class="in1">
+                        <input type="text" placeholder="Email or Mobile Number " name="pass"/><br>
+                    </div>
+                </div>
+                <div class="btn"><button type="submit">Send Otp</button><br></div>
+                    <div class="anc">
+                        <a href="{% url 'home' %}">Go to Login...or.. </a>
+                        <a href="{% url 'register'%}"> New Register</a>
+                    </div>
+                
+            </form>
+
+        </div>
+                      
+    </div>
+
+<script src="/static/js/validate.js"></script>
+
+    
+{% endblock %}
+
+

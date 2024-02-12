@@ -1,0 +1,101 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+{% block title %}
+
+Register
+
+{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="container">
+        <div class="form">
+            <form id="form-register" action="">
+                <h1>Register</h1>
+                <div class="login">
+                    <div class="user">
+                        <label>
+                            Firstname
+                        </label>
+                        <label class="lab">Lastname</label>
+                    </div>
+                </div>
+                <div class="full">
+                    <div class="inr1">
+                        <input type="text" placeholder="Firstname" name="fname">
+                    </div>
+                    <div class="inr2">
+                        
+                        <input type="text" placeholder="Lastname" name="sname">
+                    </div>
+                </div>
+                <div class="mob">
+                    <label class="mob">
+                        Mobile Number
+                    </label>
+                </div>
+                <div class="mobile">
+                    <input class="typ" type="number" placeholder="Mobile Number" name="mobile"/>
+                </div>
+                <div class="mob-1">
+                    <label class="mob-1">
+                        Password
+                    </label>
+                </div>
+                <div class="mobile-1">
+                    <input type="password" placeholder="New Password" name="password" />
+                </div>
+                <div class="mob-1">
+                    <label class="mob-1">
+                        Confirm Password
+                    </label>
+                </div>
+                <div class="mobile-2">
+                    <input type="password" placeholder="Confirm Password" name="password"/>
+                </div>
+                
+                <div class="div">
+                    <div class="div1">
+                        <label for="">Gender</label>
+                    </div>
+                    <div class="div2">
+                        <label id="div-2">Date of Birth</label>
+                    </div>
+                </div>
+                <div class="drop">
+                    <div class="drop-down">
+                        <select>
+                            <option>
+                                Choose
+                            </option>
+                            <option>
+                                Male
+                            </option>
+                            <option>
+                                Female
+                            </option>
+                        </select>
+                    <div class="btn-1">
+                    
+                        <input type="date" placeholder="Data of Birth" id="in1" name="month"/>
+                    </div>
+                </div>
+                <div class="btn1">
+                    <button id="btn12">
+                        Register
+                    </button>
+                </div>
+                
+                    <div class="anc1">
+                        <a href="{% url 'home' %}">Already have an account?Login</a>
+                    </div>
+            </form>    
+        </div>
+    </div>
+        
+</div>
+<script src="/static/js/validation.js "></script>
+ {% endblock %}
